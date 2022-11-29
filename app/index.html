@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin/styles/css/default.css">
+    <link rel="stylesheet" href="admin/styles/css/index.css">
+    <link rel="stylesheet" href="admin/styles/css/cambio.css">
+    <link rel="stylesheet" href="admin/styles/css/canversor.css">
+    <link rel="stylesheet" href="admin/styles/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <title>TCâmbio APP</title>
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            <h2><i class="fas fa-arrow-left"></i> TCâmbio</h2>
+        </div>
+        <button id="btn_navbar"><i class="fas fa-bars"></i></button>
+    </header>
+    
+    <nav id="navbar">
+        <ul>
+            <li><button>Atualizações <i class="fas fa-redo"></i></button></li>
+            <li><button>Nossas Redes <i class="fas fa-share"></i></button></li>
+            <li><button>Apps TCâmbio <i class="fas fa-plus"></i></button></li>
+            <li><button>Ajuda <i class="fas fa-info"></i></button></li>
+        </ul>
+    </nav>
+
+    <main id="home">
+        <img src="admin/midias/imgs/MRR.png" width="200px">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nihil hic facere consectetur. Nihil hic facere consectetur.
+        </p>
+        <button id="btn_cambio">TCâmbio-App <i class="fas fa-arrow-right"></i></button>
+        <button id="btn_conversor">Conversor-App <i class="fas fa-arrow-right"></i></button>
+    </main>
+
+    <main id="cambio">
+        <section class="main">
+            <section class="header">
+                <p>Selecione um banco:</p>
+                <select name="cambio_select" id="cambio_select">
+                    <option value="BMA">Banco Millénio Atlanctico(BMA)</option>
+                    <option value="BAI">Banco Angolano Internacional(BAI)</option>
+                    <option value="BNI">Banco de Negócio Internacional(BNI)</option>
+                </select>
+            </section>
+            <section class="body">
+                <div class="info">
+                    <h2>Câmbio do Banco <span class="banco">BMA</span></h2>
+                    <p>Atualizado em: <span class="data">12/07/2022</span></p>
+                </div>
+                <section class="cambios">
+                    <div class="cabecario">
+                        <div>Moeda</div>
+                        <div>Compra</div>
+                        <div>Venda</div>
+                    </div>
+                    <ul class="ul_master">
+                        
+                    </ul>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <main id="conversor">
+        <section class="top">
+            <select name="moeda1" id="moeda1">
+                <option value="USD">USD</option>
+                <option value="AKZ">AKZ</option>
+                <option value="EURO">EURO</option>
+            </select>
+
+            <input type="number" name="valor" id="valor">
+
+            <select name="moeda2" id="moeda2">
+                <option value="AKZ">AKZ</option>
+                <option value="USD">USD</option>
+                <option value="EURO">EURO</option>
+            </select>
+            <button id="btn_converter">Converter</button>
+        </section>
+        <section id="bottom">
+            <button><i class="fas fa-copy"></i></button>
+            <h3 id="resultado">Sem nada ainda</h3>
+        </section>
+    </main>
+
+    <aside id="search">
+        <form action="/">
+            <input type="text" name="key" id="key" placeholder="Pesquise por algo*" required>
+            <button><i class="fas fa-search"></i></button>
+        </form>
+    </aside>
+    <aside id="cadastro">
+        <form action="/">
+            <input type="email" name="email" id="email" placeholder="Insira o seu e-mail aqui*" required>
+            <button><i class="fas fa-arrow-right"></i></button>
+        </form>
+    </aside>
+
+    <div id="menssage">
+        <p><i class="fas fa-info"></i></p>
+        <p class="msg">Uma Mensagem da caixa de mensagens</p>
+    </div>
+
+    <footer>
+        <button><a href="index.html"><i class="fas fa-home"></i></a></button>
+        <button id="btn_search"><i class="fas fa-search"></i></button>
+        <button id="btn_cadastro"><i class="fas fa-bell"></i></button>
+    </footer>
+
+    <script src="admin/scripts/index.js"></script>
+    <script src="admin/scripts/connect_api.js"></script>
+    <script src="admin/scripts/conversor.js"></script>
+    
+</body>
+</html>

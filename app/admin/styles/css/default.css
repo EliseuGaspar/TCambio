@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor_primaria: #f9f9f9;
+    --cor_secundaria: #1e90ff;
+    --text_colors: #444;
+}
+
+a,button{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+button,input,select{
+    outline: none;
+    border: 0;
+}
+
+input::placeholder{
+    color: var(--cor_primaria);
+}
+
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cor_primaria);
+    font-family: Calibri;
+    font-weight: 400;
+}

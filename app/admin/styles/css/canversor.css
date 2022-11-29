@@ -1,0 +1,78 @@
+@import url(default.css);
+
+#conversor{
+    left: -100%;
+    background-color: var(--cor_primaria);
+    transition: left .3s ease-in-out;
+}
+
+#conversor.active{
+    left: 0;
+}
+
+#conversor .top{
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    height: 14.25rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#conversor .top input, #conversor .top select{
+    width: 80%;
+    background-color: transparent;
+    color: var(--text_colors);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#conversor .top input{
+    border-bottom: 1px solid var(--cor_secundaria);
+    height: 27px;
+}
+
+#conversor .top select{
+    cursor: pointer;
+}
+
+#conversor .top button{
+    margin-top: 10px;
+    width: 80%;
+    height: 30px;
+    background-color: var(--cor_secundaria);
+    color: var(--cor_primaria);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#conversor #bottom{
+    position: absolute;
+    top: 22rem;
+    width: 80%;
+    height: 20rem;
+    background-color: transparent;
+    color: var(--text_colors);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+#conversor #bottom button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    color: var(--cor_secundaria);
+    font-size: 19px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
